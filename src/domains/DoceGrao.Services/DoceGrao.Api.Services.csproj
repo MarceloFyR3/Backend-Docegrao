@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DoceGrao.Domain\DoceGrao.Api.Domain.csproj" />
+    <ProjectReference Include="..\DoceGrao.Infrastructure\DoceGrao.Api.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

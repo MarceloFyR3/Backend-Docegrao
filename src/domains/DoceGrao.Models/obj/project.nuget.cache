@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SqlC/nc/nBPVabM7fwzYNcmRL8ted9M7SVy6Ns8XBxpIwvE6yrgQAdZlohFGbIriNgUyiIgAPzaz3jDcqt2TYQ==",
+  "success": true,
+  "projectFilePath": "C:\\ProjetosFyR3\\DC\\BackEnd-DoceGrao\\src\\domains\\DoceGrao.Models\\DoceGrao.Api.Domain.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marce\\.nuget\\packages\\flunt\\1.0.5\\flunt.1.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

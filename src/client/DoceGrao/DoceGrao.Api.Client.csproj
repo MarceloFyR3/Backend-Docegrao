@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\domains\DoceGrao.Domain\DoceGrao.Api.Domain.csproj" />
+    <ProjectReference Include="..\..\domains\DoceGrao.Infrastructure\DoceGrao.Api.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\domains\DoceGrao.Services\DoceGrao.Api.Services.csproj" />
+    <ProjectReference Include="..\..\infrastruture\DoceGrao.Database.Infrastruture\DoceGrao.Database.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>

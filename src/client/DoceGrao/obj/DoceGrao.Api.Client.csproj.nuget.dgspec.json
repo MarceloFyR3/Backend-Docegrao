@@ -1,0 +1,482 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\client\\DoceGrao\\DoceGrao.Api.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\client\\DoceGrao\\DoceGrao.Api.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\client\\DoceGrao\\DoceGrao.Api.Client.csproj",
+        "projectName": "DoceGrao.Api.Client",
+        "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\client\\DoceGrao\\DoceGrao.Api.Client.csproj",
+        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\client\\DoceGrao\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\ProjetosK2\\BackEnd-Portal-Iscas\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj"
+              },
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Infrastructure\\DoceGrao.Api.Infrastructure.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Infrastructure\\DoceGrao.Api.Infrastructure.csproj"
+              },
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Services\\DoceGrao.Api.Services.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Services\\DoceGrao.Api.Services.csproj"
+              },
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\infrastruture\\DoceGrao.Database.Infrastruture\\DoceGrao.Database.Infrastructure.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\infrastruture\\DoceGrao.Database.Infrastruture\\DoceGrao.Database.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            },
+            "Swashbuckle.AspNetCore.Newtonsoft": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj",
+        "projectName": "DoceGrao.Api.Domain",
+        "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj",
+        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\ProjetosK2\\BackEnd-Portal-Iscas\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\shared\\DoceGrao.Api.Shared\\DoceGrao.Api.Shared.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\shared\\DoceGrao.Api.Shared\\DoceGrao.Api.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Infrastructure\\DoceGrao.Api.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Infrastructure\\DoceGrao.Api.Infrastructure.csproj",
+        "projectName": "DoceGrao.Api.Infrastructure",
+        "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Infrastructure\\DoceGrao.Api.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\ProjetosK2\\BackEnd-Portal-Iscas\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj"
+              },
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\infrastruture\\DoceGrao.Database.Infrastruture\\DoceGrao.Database.Infrastructure.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\infrastruture\\DoceGrao.Database.Infrastruture\\DoceGrao.Database.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Services\\DoceGrao.Api.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Services\\DoceGrao.Api.Services.csproj",
+        "projectName": "DoceGrao.Api.Services",
+        "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Services\\DoceGrao.Api.Services.csproj",
+        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\ProjetosK2\\BackEnd-Portal-Iscas\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj"
+              },
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Infrastructure\\DoceGrao.Api.Infrastructure.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Infrastructure\\DoceGrao.Api.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\infrastruture\\DoceGrao.Database.Infrastruture\\DoceGrao.Database.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\infrastruture\\DoceGrao.Database.Infrastruture\\DoceGrao.Database.Infrastructure.csproj",
+        "projectName": "DoceGrao.Database.Infrastructure",
+        "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\infrastruture\\DoceGrao.Database.Infrastruture\\DoceGrao.Database.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\infrastruture\\DoceGrao.Database.Infrastruture\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\ProjetosK2\\BackEnd-Portal-Iscas\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj": {
+                "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\domains\\DoceGrao.Domain\\DoceGrao.Api.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "NetHacksPack.Core": {
+              "target": "Package",
+              "version": "[1.0.4.4, )"
+            },
+            "NetHacksPack.Data.Persistence.Abstractions": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "NetHacksPack.Data.Persistence.EF": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "NetHacksPack.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "NetHacksPack.Hosting.Connections": {
+              "target": "Package",
+              "version": "[1.0.0.3, )"
+            },
+            "NetHacksPack.Hosting.Environment": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "NetHacksPack.Integration.Abstractions": {
+              "target": "Package",
+              "version": "[1.0.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\shared\\DoceGrao.Api.Shared\\DoceGrao.Api.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\shared\\DoceGrao.Api.Shared\\DoceGrao.Api.Shared.csproj",
+        "projectName": "DoceGrao.Api.Shared",
+        "projectPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\shared\\DoceGrao.Api.Shared\\DoceGrao.Api.Shared.csproj",
+        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjetosFyR3\\DC\\Backend-Docegrao\\src\\shared\\DoceGrao.Api.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\ProjetosK2\\BackEnd-Portal-Iscas\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
