@@ -2,6 +2,7 @@
 using System.Linq;
 using DoceGrao.Api.Domain.Models.ValueObjects;
 using DoceGrao.Api.Domain.Services.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DoceGrao.Api.Client.Controllers
@@ -17,7 +18,7 @@ namespace DoceGrao.Api.Client.Controllers
             _userService = userService;
         }
 
-        //[AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("authenticate")]
         public IActionResult Authenticate(Credential credencial)
         {
