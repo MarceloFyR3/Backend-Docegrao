@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
             "NetHacksPack.Core": {
               "target": "Package",
               "version": "[1.0.4.4, )"

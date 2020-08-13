@@ -2,14 +2,18 @@
 using DoceGrao.Api.Infrastructure.DependencyInjection;
 using DoceGrao.Api.Services.DependencyInjection;
 using DoceGrao.Database.Infrastructure.DependencyInjection;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Converters;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DoceGrao.Api.Client
 {
@@ -36,10 +40,59 @@ namespace DoceGrao.Api.Client
 
             services.AddHealthChecks();
 
-            services.AddSwaggerGen(c =>
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
                 {
-                    c.SwaggerDoc("v1", new OpenApiInfo {Title = "Doce Gão API", Version = "v1"});
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("Key teste")),
+                    ValidIssuer = "docegrao.com.br",
+                    ValidAudience = "example",
+                    ValidateIssuer = true,
+                    ValidateAudience = true
+                };
+                x.Events = new JwtBearerEvents
+                {
+                    OnAuthenticationFailed = context =>
+                    {
+                        if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
+                            context.Response.Headers.Add("token-expired", "true");
+
+                        return Task.CompletedTask;
+                    }
+                };
+            });
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Doce Gão API", Version = "v1" });
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "O header Authorization utiliza o schema Bearer. Insira 'Bearer [Token]' na entrada de texto abaixo (Exemplo: Bearer 12345abcdef)",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey
                 });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+                {
+                new OpenApiSecurityScheme
+                {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+                },
+                new string[] { }
+                }
+                });
+            });
 
             services.AddSwaggerGenNewtonsoftSupport();
         }

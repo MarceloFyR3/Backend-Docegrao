@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="9.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
     <PackageReference Include="NetHacksPack.Core" Version="1.0.4.4" />
     <PackageReference Include="NetHacksPack.Data.Persistence.Abstractions" Version="1.0.0.1" />
     <PackageReference Include="NetHacksPack.Data.Persistence.EF" Version="1.0.0.1" />
