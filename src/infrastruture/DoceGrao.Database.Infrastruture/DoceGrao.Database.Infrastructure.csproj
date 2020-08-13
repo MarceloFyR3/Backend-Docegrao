@@ -20,7 +20,6 @@
     <PackageReference Include="NetHacksPack.Core" Version="1.0.4.4" />
     <PackageReference Include="NetHacksPack.Data.Persistence.Abstractions" Version="1.0.0.1" />
     <PackageReference Include="NetHacksPack.Data.Persistence.EF" Version="1.0.0.1" />
-    <PackageReference Include="NetHacksPack.Hosting.Abstractions" Version="1.0.0.1" />
     <PackageReference Include="NetHacksPack.Hosting.Connections" Version="1.0.0.3" />
     <PackageReference Include="NetHacksPack.Hosting.Environment" Version="1.0.0.1" />
     <PackageReference Include="NetHacksPack.Integration.Abstractions" Version="1.0.1.1" />

@@ -27,13 +27,12 @@ namespace DoceGrao.Api.Client
         {
             services.AddControllers().AddNewtonsoftJson(opt => opt.SerializerSettings.Converters.Add(new StringEnumConverter()));
 
-            //services.AddConnectorBuilder();
+            services.AddConnectionProvider();
 
             services
                 .AddDomainRepositories()
                 .AddDomainDependencies()
-                .AddDataBaseContext((connectionProvider) =>
-                    connectionProvider.GetConnectionString("DefaultConnection"));
+                .AddDataBaseContext((connectionProvider) => connectionProvider.GetConnectionString("DefaultConnection"));
 
             services.AddHealthChecks();
 

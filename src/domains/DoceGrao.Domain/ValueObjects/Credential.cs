@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Text.Json.Serialization;
 using DoceGrao.Api.Shared.ValueObjects;
 using FluentValidation;
 
@@ -15,6 +16,7 @@ namespace DoceGrao.Api.Domain.Models.ValueObjects
         }
 
         public string Login { get; private set; }
+        [JsonIgnore]
         public string Password { get; private set; }
     }
 

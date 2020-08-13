@@ -2,6 +2,7 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using NetHacksPack.Hosting ;
 
 namespace DoceGrao.Api.Client
 {
@@ -17,7 +18,7 @@ namespace DoceGrao.Api.Client
                 {
                     configuration.SetBasePath(Directory.GetCurrentDirectory());
 
-                    var environment = System.Environment.GetEnvironmentVariable($"ASPCORE_ENVIRONMENT");
+                    var environment = System.Environment.GetEnvironmentVariable($"ASPNETCORE_ENVIRONMENT");
                     configuration
                         .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                         .AddJsonFile(string.Format("appsettings.{0}.json", environment), optional: true, reloadOnChange: true)

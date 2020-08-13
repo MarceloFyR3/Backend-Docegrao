@@ -59,6 +59,30 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
+            "NetHacksPack.Core": {
+              "target": "Package",
+              "version": "[1.0.4.4, )"
+            },
+            "NetHacksPack.Data.Persistence.Abstractions": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "NetHacksPack.Data.Persistence.EF": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "NetHacksPack.Hosting": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "NetHacksPack.Hosting.Connections": {
+              "target": "Package",
+              "version": "[1.0.0.3, )"
+            },
+            "NetHacksPack.Hosting.Environment": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.5.1, )"
@@ -86,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -155,7 +179,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -221,7 +245,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -287,7 +311,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -373,10 +397,6 @@
               "target": "Package",
               "version": "[1.0.0.1, )"
             },
-            "NetHacksPack.Hosting.Abstractions": {
-              "target": "Package",
-              "version": "[1.0.0.1, )"
-            },
             "NetHacksPack.Hosting.Connections": {
               "target": "Package",
               "version": "[1.0.0.3, )"
@@ -412,7 +432,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -474,7 +494,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
