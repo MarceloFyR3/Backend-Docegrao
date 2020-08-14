@@ -1,6 +1,8 @@
 
+using DoceGrao.Api.Domain.Models.Settings;
 using DoceGrao.Api.Infrastructure.DependencyInjection;
 using DoceGrao.Api.Services.DependencyInjection;
+using DoceGrao.Api.Services.Helpers;
 using DoceGrao.Database.Infrastructure.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -32,42 +34,18 @@ namespace DoceGrao.Api.Client
             services.AddControllers().AddNewtonsoftJson(opt => opt.SerializerSettings.Converters.Add(new StringEnumConverter()));
 
             services.AddConnectionProvider();
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+            services.Configure<TokenManagement>(Configuration.GetSection("tokenManagement"));
+            var token = Configuration.GetSection("tokenManagement").Get<TokenManagement>();
+            var appSettings = Configuration.GetSection("AppSettings").Get<AppSettings>();
 
             services
                 .AddDomainRepositories()
                 .AddDomainDependencies()
-                .AddDataBaseContext((connectionProvider) => connectionProvider.GetConnectionString("DefaultConnection"));
+                .AddDataBaseContext((connectionProvider) => connectionProvider.GetConnectionString("DefaultConnection"))
+                .AddJwtMIddleware(token);
 
             services.AddHealthChecks();
-
-            services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(x =>
-            {
-                x.RequireHttpsMetadata = false;
-                x.SaveToken = true;
-                x.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("Key teste")),
-                    ValidIssuer = "docegrao.com.br",
-                    ValidAudience = "example",
-                    ValidateIssuer = true,
-                    ValidateAudience = true
-                };
-                x.Events = new JwtBearerEvents
-                {
-                    OnAuthenticationFailed = context =>
-                    {
-                        if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
-                            context.Response.Headers.Add("token-expired", "true");
-
-                        return Task.CompletedTask;
-                    }
-                };
-            });
 
             services.AddSwaggerGen(c =>
             {
@@ -125,6 +103,7 @@ namespace DoceGrao.Api.Client
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DoceGrao.Domain\DoceGrao.Api.Domain.csproj" />
     <ProjectReference Include="..\DoceGrao.Infrastructure\DoceGrao.Api.Infrastructure.csproj" />
   </ItemGroup>

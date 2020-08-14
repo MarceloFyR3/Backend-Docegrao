@@ -24,8 +24,6 @@ namespace DoceGrao.Api.Client.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate(Credential credencial)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState.Values.SelectMany(e => e.Errors));
-
             try
             {
                 var credencialValidate = new CredentialValidator();
@@ -35,22 +33,16 @@ namespace DoceGrao.Api.Client.Controllers
                     return BadRequest(new
                     {
                         success = false,
-                        mensage = result.Errors.Select(e => e.ErrorMessage).ToList()
+                        mensage = result.Errors.SelectMany(e => e.ErrorMessage)
                     });
                 }
                 
                 var user = _userService.Authenticate(credencial);
 
                 if (!user.Sucesso)
-                    return BadRequest(user);
+                    return BadRequest(user.Message);
 
-                return Ok(new
-                {
-                    user.Data.Id,
-                    Username = user.Data.Name,
-                    user.Data.Credential.Login,
-                    user.Data.Email.Address
-                });
+                return Ok(user);
             }
             catch (ArgumentException e)
             {

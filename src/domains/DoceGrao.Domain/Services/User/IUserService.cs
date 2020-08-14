@@ -14,6 +14,6 @@ namespace DoceGrao.Api.Domain.Services.User
         Task<ReturnData<UserCreateViewModel>> Register(UserCreateViewModel form);
         Task<ReturnData<UserModel>> GetById(string idUsuario);
         Task<ReturnData<object>> Update(UserUpdateViewModel form);
-        ReturnData<UserModel> Authenticate(Credential credential);
+        ReturnData<AuthenticateResponse> Authenticate(Credential credential);
     }
 }
